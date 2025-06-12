@@ -1,0 +1,315 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <link rel="icon" type="image/x-icon" href="../img/White.png">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>zi0nks</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
+    <link rel="stylesheet" href="../css/style.css">
+    <script src="../js/script.js"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+    <script src="../js/email.js"></script>
+</head>
+
+<body class="bg-gray-100 text-gray-900">
+
+    <!-- Header --> 
+    <header class="relative">
+        <div class="container mx-auto px-6 py-3">
+            <div class="flex items-center justify-between">
+                <div class="text-lg font-semibold text-gray-700">
+                 <a href="#">
+                <img src="../img/White.png" alt="Logotipo" class="h-10">
+                </a>
+
+                </div>
+                <button class="hamburger">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-white" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
+                    </svg>
+                </button>
+                <div class="menu-items">
+                    <a href="#about" class="text-white mx-2 hover:text-white-600 hover:bg-blue-800 focus:ring-4 focus:ring-white-300 font-medium rounded-lg px-5">sobre</a>
+                    <a href="#projects" class="text-white mx-2 hover:bg-blue-800 focus:ring-4 focus:ring-white-300 font-medium rounded-lg px-5">projetos</a>
+                    <a href="#contact" class="text-white mx-2 hover:bg-blue-800 focus:ring-4 focus:ring-white-300 font-medium rounded-lg px-5">contato</a>
+                    <a href="#blog" class="text-white mx-2 hover:bg-blue-800 focus:ring-4 focus:ring-white-300 font-medium rounded-lg px-5  blog-link">em construção</a>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <main class="container mx-auto px-6">
+        <section id="about" class="my-12">
+            <div class="bg-white shadow-lg rounded-lg overflow-hidden">
+                <!-- Card Header com Foto -->
+                <div class="bg-fuchsia-900 p-6">
+                    <div class="flex flex-col md:flex-row items-center md:items-start gap-6">
+                        <img src="../img/my-photo.png" alt="Minha Foto"
+                            class="w-32 h-32 rounded-full border-4 border-white shadow-lg">
+                        <div class="text-center md:text-left">
+                            <p class="text-2xl font-bold text-black mb-2">zi0nks</p>
+                            <p class="text-black mb-2">Kleyton Marques</p>
+                            <p class="text-black font-bold mb-4">Desenvolvedor Front-end | Freelancer & Estudante</p>
+                            <p class="text-black text-justify leading-relaxed max-w-1xl">
+                               Olá! Sou um desenvolvedor front-end apaixonado por transformar ideias em interfaces modernas, funcionais e intuitivas. Crio sites, aplicativos e soluções digitais sob medida, sempre com foco em performance, usabilidade e design responsivo.
+
+    Utilizo tecnologias como Vue.js, TypeScript, JavaScript, HTML, CSS e ferramentas modernas como Tailwind CSS e frameworks como Nuxt para entregar produtos de alta qualidade. Tenho experiência no desenvolvimento de interfaces dinâmicas, consumo de APIs e integração com sistemas diversos.
+
+    Meu objetivo é oferecer soluções criativas e eficientes que atendam às necessidades de cada projeto, unindo tecnologia, experiência do usuário e boas práticas de desenvolvimento. Seja para empresas, empreendedores ou projetos pessoais, estou sempre pronto para construir algo incrível com você.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Informações Detalhadas -->
+                <div class="p-8">
+                    <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+                        <!-- Education -->
+                        <div class="bg-gray-50 rounded-lg p-6">
+                            <div class="flex items-center space-x-3 mb-4">
+                                <div class="rounded-full bg-blue-100 p-3">
+                                    <svg xmlns="http://www.w3.org/2000/svg" class="w-6 h-6 text-blue-600" fill="none"
+                                        viewBox="0 0 24 24" stroke="currentColor">
+                                        <path d="M12 14l9-5-9-5-9 5 9 5z" />
+                                        <path
+                                            d="M12 14l6.16-3.422a12.083 12.083 0 01.665 6.479A11.952 11.952 0 0012 20.055a11.952 11.952 0 00-6.824-2.998 12.078 12.078 0 01.665-6.479L12 14z" />
+                                    </svg>
+                                </div>
+                                <h3 class="font-bold text-lg text-black">Graduando</h3>
+                            </div>
+                            <div>
+                                <div class="flex items-center space-x-3 mb-2">
+                                    <img src="../img/unifavip.webp" alt="LOGO UNIFAVIP"
+                                        class="w-10 h-10 object-contain rounded-full border-3 border-white">
+                                    <div>
+                                        <p class="font-medium text-gray-800">Centro Universitário UNIFAVIP</p>
+                                        <p class="text-gray-600">Análise e Desenvolvimento de Sistemas</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Community -->
+                        <div class="bg-gray-50 rounded-lg p-6">
+                            <div class="flex items-center space-x-3 mb-4">
+                                <div class="rounded-full bg-red-100 p-3">
+                                    <svg xmlns="http://www.w3.org/2000/svg" class="w-6 h-6 text-red-600" fill="none"
+                                        viewBox="0 0 24 24" stroke="currentColor">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                            d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z" />
+                                    </svg>
+                                </div>
+                                <h3 class="font-bold text-lg text-black">Comunidade</h3>
+                            </div>
+                            <div>
+                                <div class="flex items-center space-x-3 mb-2">
+                                    <img src="../img/cbflogo.png" alt="Logo UNIFAVIP"
+                                        class="w-10 h-10 rounded-full border-3 border-white">
+                                    <div>
+                                        <p class="font-medium text-gray-800">Confederação Brasileira de FutGogos</p>
+                                        <p class="text-gray-600">Membro Ativo da Comunidade</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Work -->
+                        <div class="bg-gray-50 rounded-lg p-6">
+                            <div class="flex items-center space-x-3 mb-4">
+                                <div class="rounded-full bg-green-100 p-3">
+                                    <svg xmlns="http://www.w3.org/2000/svg" class="w-6 h-6 text-green-600" fill="none"
+                                        viewBox="0 0 24 24" stroke="currentColor">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                            d="M21 13.255A23.931 23.931 0 0112 15c-3.183 0-6.22-.62-9-1.745M16 6V4a2 2 0 00-2-2h-4a2 2 0 00-2 2v2m4 6h.01M5 20h14a2 2 0 002-2V8a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
+                                    </svg>
+                                </div>
+                                <h3 class="font-bold text-lg text-black">Trabalho</h3>
+                            </div>
+                            <div>
+                                <p class="font-medium text-gray-800">Desenvolvedor Front-end</p>
+                                <p class="text-gray-600">Freelancer</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Formação Acadêmica -->
+                    <div class="mt-1">
+                        <h3 class="font-bold text-lg mb-1">Formação Acadêmica</h3>
+                        <div class="space-y-3">
+                            <div class="bg-gray-50 rounded-lg p-2">
+                                <div class="flex justify-between items-start">
+                                    <div class="flex gap-4">
+                                        <img src="../img/unifavip.webp" alt="Logo UNIFAVIP" class="w-16 h-16 object-contain">
+                                        <div>
+                                            <h4 class="font-bold text-gray-800">Análise e Desenvolvimento de Sistemas
+                                            </h4>
+                                            <p class="text-gray-600 font-semibold">Centro Universitário UNIFAVIP</p>
+                                            <p class="text-gray-500 mt-2">Principais disciplinas: Engenharia de Software,
+                                                Desenvolvimento Web, Banco de Dados, Análise de Sistemas, Arquitetura de Computadores,
+                                                Algorítimo e Estrutura de Dados.
+                                        </div>
+                                    </div>
+                                    <span class="text-gray-500 ml-4 whitespace-nowrap hidden md:block">2023 - Presente</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Stack Tecnológica -->
+                    <div class="mt-8">
+                        <h3 class="font-bold text-lg mb-0">Stack Tecnológica</h3>
+                        <div class="flex flex-wrap gap-3">
+                            <span
+                                class="px-4 py-2 bg-red-100 text-red-800 rounded-full text-sm font-medium">Vue.js</span>
+                            <span
+                                class="px-4 py-2 bg-green-100 text-green-800 rounded-full text-sm font-medium">TypeScript</span>
+                            <span
+                                class="px-4 py-2 bg-pink-100 text-yellow-800 rounded-full text-sm font-medium">React</span>
+                            <span
+                                class="px-4 py-2 bg-blue-100 text-blue-800 rounded-full text-sm font-medium">PHP</span>
+                            <span
+                                class="px-4 py-2 bg-yellow-100 text-yellow-800 rounded-full text-sm font-medium">JavaScript</span>
+                            <span
+                                class="px-4 py-2 bg-purple-100 text-yellow-800 rounded-full text-sm font-medium">Tailwind CSS</span>
+                        </div>
+                    </div>
+
+
+                </div>
+            </div>
+            <section id="projects" class="py-12 px-4 md:px-6 lg:px-8 max-w-7xl mx-auto">
+                <h2 class="text-3xl font-bold mb-8 text-center">Projetos</h2>
+                
+                <div class="project-grid grid grid-cols-1 md:grid-cols-2 gap-8">
+                    <!-- Project 1 -->
+                    <article class="project-card bg-white rounded-xl overflow-hidden shadow-lg">
+                        <a href="-" target="_blank" 
+                           class="block group">
+                            <div class="overflow-hidden">
+                                <img src="../img/my-photo.png" 
+                                     alt="-" 
+                                     class="project-image w-full h-48 md:h-72 object-cover object-center">
+                            </div>
+                            <div class="p-6">
+                                <h3 class="text-xl font-bold mb-3 text-gray-900 group-hover:text-blue-600 transition-colors">
+                                    Em desenvolvimento.
+                                </h3>
+                                <p class="text-gray-600 leading-relaxed">
+                                    Olá! O projeto ainda não foi desenvolvido. Volte mais tarde.
+                                </p>
+                                <div class="mt-4 flex items-center text-blue-600">
+                                    <span class="text-sm font-medium">Ver projeto</span>
+                                    <svg class="w-4 h-4 ml-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" 
+                                              d="M14 5l7 7m0 0l-7 7m7-7H3"/>
+                                    </svg>
+                                </div>
+                            </div>
+                        </a>
+                    </article>
+        
+                    <!-- Project 2 -->
+                    <article class="project-card bg-white rounded-xl overflow-hidden shadow-lg">
+                        <a href="-" 
+                           target="_blank" 
+                           class="block group">
+                            <div class="overflow-hidden">
+                                <img src="../img/my-photo.png" 
+                                     alt="Linguagens Formais" 
+                                     class="project-image w-full h-48 md:h-72 object-cover object-center">
+                            </div>
+                            <div class="p-6">
+                                <h3 class="text-xl font-bold mb-3 text-gray-900 group-hover:text-blue-600 transition-colors">
+                                    Em desenvolvimento.
+                                </h3>
+                                <p class="text-gray-600 leading-relaxed">
+                                    Olá! O projeto ainda não foi desenvolvido. Volte mais tarde.
+                                </p>
+                                <div class="mt-4 flex items-center text-blue-600">
+                                    <span class="text-sm font-medium">Ver projeto</span>
+                                    <svg class="w-4 h-4 ml-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" 
+                                              d="M14 5l7 7m0 0l-7 7m7-7H3"/>
+                                    </svg>
+                                </div>
+                            </div>
+                        </a>
+                    </article>
+                </div>
+            </section>
+
+        <!-- Contact Section -->
+    <section id="contact" class="my-12">
+  <h2 class="text-3xl font-bold mb-4">Contato</h2>
+  <form id="contact-form" class="bg-white shadow-md rounded-lg p-6">
+    
+    <div class="mb-4">
+      <label class="block text-gray-700 text-sm font-bold mb-2" for="name">Nome</label>
+      <input
+        name="from_name"
+        class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline bg-gray-200"
+        id="name" type="text" placeholder="Seu nome" required>
+    </div>
+
+    <div class="mb-4">
+      <label class="block text-gray-700 text-sm font-bold mb-2" for="email">Email</label>
+      <input
+        name="from_email"
+        class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline bg-gray-200"
+        id="email" type="email" placeholder="Seu email" required>
+    </div>
+
+    <div class="mb-4">
+      <label class="block text-gray-700 text-sm font-bold mb-2" for="message">Mensagem</label>
+      <textarea
+        name="message"
+        class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline bg-gray-200"
+        id="message" rows="4" placeholder="Sua mensagem" required></textarea>
+    </div>
+
+    <div class="flex items-center justify-between">
+      <button
+        class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline"
+        type="submit">
+        Enviar
+      </button>
+    </div>
+
+  </form>
+</section>
+
+
+        <!-- Social Media Section -->
+        <section id="social-media" class="my-12">
+            <div class="flex justify-center space-x-4">
+                <a href="https://www.linkedin.com/in/zi0nks" target="_blank"
+                    class="text-blue-600 hover:text-blue-800">
+                    <svg class="w-8 h-8" fill="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                        <path
+                            d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.761 0 5-2.239 5-5v-14c0-2.761-2.239-5-5-5zm-11 19h-3v-10h3v10zm-1.5-11.268c-.966 0-1.75-.784-1.75-1.75s.784-1.75 1.75-1.75 1.75.784 1.75 1.75-.784 1.75-1.75 1.75zm13.5 11.268h-3v-5.5c0-1.378-1.122-2.5-2.5-2.5s-2.5 1.122-2.5 2.5v5.5h-3v-10h3v1.268c.878-.878 2.122-1.268 3.5-1.268 2.481 0 4.5 2.019 4.5 4.5v5.5z" />
+                    </svg>
+                </a>
+                <a href="https://github.com/zi0nks" target="_blank" class="text-blue-900 hover:text-gray-700">
+                    <svg class="w-8 h-8" fill="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                        <path
+                            d="M12 0c-6.627 0-12 5.373-12 12 0 5.302 3.438 9.8 8.205 11.387.6.111.82-.261.82-.577 0-.285-.011-1.04-.017-2.04-3.338.726-4.042-1.61-4.042-1.61-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.838 1.237 1.838 1.237 1.07 1.834 2.809 1.304 3.495.997.108-.775.418-1.304.762-1.604-2.665-.305-5.466-1.332-5.466-5.931 0-1.31.469-2.381 1.236-3.221-.124-.303-.536-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.655 1.653.243 2.874.119 3.176.77.84 1.235 1.911 1.235 3.221 0 4.61-2.804 5.624-5.475 5.921.43.371.814 1.102.814 2.222 0 1.606-.014 2.898-.014 3.293 0 .319.218.694.825.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z" />
+                    </svg>
+                </a>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-black shadow mt-12 footer-slide-up">
+        <div class="container mx-auto px-6 py-3 text-center">
+            <p class="text-white"> zionks - 2025
+            </p>
+        </div>
+    </footer>
+
+</body>
+
+</html>
