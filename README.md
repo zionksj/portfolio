@@ -25,7 +25,7 @@ Bem-vindo ao Bio-Contact! Esta é uma landing page com a função de destacar mi
 
 1. Clone o repositório:
     bash
-    git clone https://github.com/zionksj/bio-contact.git && cd bio-contact
+    git clone https://github.com/zionksj/portfolio.git && cd portfolio
     
 
 2. Instale as depedências do projeto:
